@@ -1,0 +1,4 @@
+<mat-tab-group>
+  <mat-tab *ngFor="let menu of navMenu" (click)="doReloadBody(menu)">{{menu.name}}</mat-tab>
+</mat-tab-group>
+<app-navigator-body [body]="dataBody"></app-navigator-body>
